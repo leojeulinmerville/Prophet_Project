@@ -1,0 +1,6 @@
+date_t, date_t_plus_1,
+price_t, price_t_plus_1,
+actual_return,
+yhat_log, yhat_lower_log, yhat_upper_log,
+yhat_price_next,
+predicted_return
