@@ -1,19 +1,13 @@
-# BTC Prophet Investment Engine (Educational)
+# Bitcoin Day-Ahead Prophet Engine (Educational)
 
-This mini-project wraps your existing **day-ahead Prophet model** for Bitcoin into a small,
-realistic investment engine:
+This project wraps a saved **Prophet** model for Bitcoin into a small, testable
+“investment engine”.
 
-- Uses your saved Prophet model (`models/prophet_m_improved_da.joblib`) as a **support tool**.
-- Reuses your **backtest dataframe** (`bt_df.csv`) exported from the notebook.
-- Exposes an **investor-facing API**: input = capital + risk profile, output = recommended
-  strategy + projected capital range and risk metrics.
-- Stays honest: this is **not** a magic trading bot, only an educational tool.
+- **Core idea**: use a *day-ahead* Prophet model (`m_improved_da`) as a **support tool**
+  to explore simple trading rules, *not* as an autonomous trading bot.
+- **Input**: capital, risk profile, horizon.
+- **Output**: recommended strategy + historical risk metrics + a rough simulation
+  of potential capital over the chosen horizon.
 
----
-
-## 1. Install dependencies
-
-In your virtual environment:
-
-```bash
-pip install -r requirements.txt
+> ⚠️ This project is **purely educational**.  
+> It is **not** financial advice, and it is **not** production-grade trading software.
